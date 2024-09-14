@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+        .image-list {
+            list-style-type: square;
+            padding-left: 0;
+            margin: 0;
+        }
+        .image-list li {
+            margin-bottom: 10px;
+        }
+        .images-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .images-content img {
+            width: calc(100% / 3 - 20px); 
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="image-list">
+            <li>Kim Namjoon</li>
+            <li>Kim Seokjin</li>
+            <li>Min Yoongi</li>
+            <li>Jung Hoseok</li>
+            <li>Park Jimin</li>
+            <li>Kim Taehyung</li>
+            <li>Jeon Jungkook</li>
+        </ul>
+        <div class="images-content">
+            <img src="RM.jpg" alt="Kim Namjoon">
+            <img src="Jinnie.jpg" alt="Kim Seokjin">
+            <img src="Min Yoongi.jpg" alt="Min Yoongi">
+            <img src="Jung Hoseok.jpg" alt="Jung Hoseok">
+            <img src="Park Jimin.jpg" alt="Park Jimin">
+            <img src="Taehyung Boss.jpeg" alt="Kim Taehyung">
+            <img src="JK.jpg" alt="Jeon Jungkook">
+        </div>
+    </div>
+</body>
+</html>

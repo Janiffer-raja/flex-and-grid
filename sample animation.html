@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Animation Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic reset and styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* Text animation */
+.animated-text {
+    font-size: 2rem;
+    color: #333;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.animated-text:hover {
+    color: #ff6347; /* Tomato color on hover */
+    transform: scale(1.2); /* Zoom in effect */
+}
+
+/* Text transition */
+.transition-text {
+    font-size: 1.5rem;
+    color: #333;
+    transition: color 0.5s ease, font-size 0.5s ease;
+}
+
+.transition-text:hover {
+    color: #4682b4; /* Steel blue color on hover */
+    font-size: 2rem; /* Increase font size */
+}
+
+/* Animation example */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.animated-text {
+    animation: bounce 2s infinite;
+}
+
+    </style>
+</head>
+<body>
+    <h1 class="animated-text">Hover over this text!</h1>
+    <p class="transition-text">This text changes color and size when you hover over it.</p>
+</body>
+</html>

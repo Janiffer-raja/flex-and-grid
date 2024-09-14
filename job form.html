@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <title>Job Application</title>
+    <style>
+        body{
+            background-color: lavenderblush;
+            text-emphasis-color: black;
+        }
+        .job-form{
+            border: black;
+            width: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <header>
+            <h1>Job Application</h1>  
+        </header>
+        <div class="job-form">
+            
+          Fullname<br><input type="text" id="fullname" name="fullname" required><br><br>
+          Lastname<br><input type="text" id="lastname" name="lastname" required><br><br>  
+          Mobile number<br> <input type="text" name="number" required><br><br>
+          Email Id<br> <input type="email"  name="EmailID"><br><br>   
+          Login Password <br><input type="password" id="password" name="password" required> <br><br>
+         
+          Course<br> <input type="radio" name="course" value="ECE"> ECE
+                     <input type="radio" name="course" value="CSE"> CSE
+                     <input type="radio" name="course" value="EEE"> EEE
+                     <input type="radio" name="course" value="IT"> IT
+                     <br><br>
+          Gender<br> <input type="radio" name="gender" value="Male"> Male 
+                     <input type="radio" name="gender" value="Female"> Female 
+                     <br><br>
+          Date OF Birth<br>
+          <input type="date"><br><br>
+          Country<br> <select>
+                       <option> </option>
+                       <option>India</option>
+                       <option>USA</option>
+                       <option>UK</option>
+                       <option>China</option>
+                       <option>Japan</option>
+                       <option>South Korea</option>
+                       <option>Thailand</option>
+          </select><br><br>
+          Resume<br>
+          <input type="file" name="MyFile" value="Filename"><br>
+
+
+        </div>
+    
+            <br><br><div class="job-Submit">
+            <button>Submit</button>
+            <button>Reset</button>
+        </div>
+    </form>
+</body>
+</html>

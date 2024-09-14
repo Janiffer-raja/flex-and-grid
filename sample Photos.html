@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+<title>Adding photos</title>
+<style>
+/* 1. Image at the left and words at right */
+.section-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #f0f0f0;
+}
+
+.section-left img {
+  width: 50%; /* Adjust as needed */
+  height: auto;
+}
+
+.section-left .content {
+  padding-left: 20px;
+  width: 50%;
+}
+
+/* 2. Image at the right and words at left */
+.section-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #f0f0f0;
+}
+
+.section-right img {
+  width: 50%; /* Adjust as needed */
+  height: auto;
+}
+
+.section-right .content {
+  padding-right: 20px;
+  width: 50%;
+}
+
+/* 3. Image as background of that section */
+.section-background {
+  background-image: url('your-image-url.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #ac55f9; /* Text color on background */
+  padding: 50px; /* Adjust padding as necessary */
+}
+</style>
+</head>
+<body>
+<!--- Html code--->
+
+<div class="section-left">
+  <img src="Taetae Vintage.jpg" alt="Image">
+  <div class="content">
+    <h2>Taetae</h2>
+    <p>No.01 Handsome Man</p>
+  </div>
+</div>
+
+<div class="section-right">
+  <div class="content">
+    <h2>Taehyung</h2>
+    <p>King of Visuals</p>
+  </div>
+  <img src="V Elegant.jpg" alt="Image">
+</div>
+
+<div class="section-background">
+    <img src="Taehyung.jpg" alt="Image">
+  <h2>background</h2>
+  <p>KIM TAEHYUNG</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flex and Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            padding: 20px;
+        } 
+        
+        
+        .fleximages-content {
+            display: flex;
+            flex-wrap: wrap; 
+            gap: 20px; 
+            border-right: 2px solid #000; 
+            padding-right: 20px; 
+        }
+        .fleximages-content img {
+            width: calc(50% - 20px); 
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+       
+        .gridcontainer {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 20px; 
+        }
+        .gridcontainer img {
+            width: 100%; 
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="fleximages-content">
+            <img src="RM.jpg" alt="Kim Namjoon">
+            <img src="Jinnie.jpg" alt="Kim Seokjin">
+            <img src="Min Yoongi.jpg" alt="Min Yoongi">
+            <img src="Jung Hoseok.jpg" alt="Jung Hoseok">
+            <img src="Park Jimin.jpg" alt="Park Jimin">
+            <img src="Taehyung Boss.jpeg" alt="Kim Taehyung">
+            <img src="JK.jpg" alt="Jeon Jungkook"> 
+        </div>
+
+      
+        <div class="gridcontainer">
+            <img src="Joon.jpg" alt="Kim Namjoon">
+            <img src="Jin.jpg" alt="Kim Seokjin">
+            <img src="MinMin.jpg" alt="Min Yoongi">
+            <img src="Sunshine.jpg" alt="Jung Hoseok">
+            <img src="Mochi.jpg" alt="Park Jimin">
+            <img src="Baby taetae.jpg" alt="Kim Taehyung">
+            <img src="Kookie.jpg" alt="Jeon Jungkook">
+        </div>
+    </div>
+</body>
+</html>
+

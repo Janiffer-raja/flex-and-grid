@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+        .image-list {
+            flex: 1; 
+            list-style-type: square;
+            padding-left: 0;
+            margin: 0;
+        }
+        .image-list li {
+            margin-bottom: 10px;
+        }
+        .images-content {
+            flex: 2; 
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .images-content img {
+            width: calc(33.33% - 20px); 
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="image-list">
+            <li>Kim Namjoon</li>
+            <li>Kim Seokjin</li>
+            <li>Min Yoongi</li>
+            <li>Jung Hoseok</li>
+            <li>Park Jimin</li>
+            <li>Kim Taehyung</li>
+            <li>Jeon Jungkook</li>
+        </ul>
+        <div class="images-content">
+            <img src="Joon.jpg" alt="Kim Namjoon">
+            <img src="Jin.jpg" alt="Kim Seokjin">
+            <img src="MinMin.jpg" alt="Min Yoongi">
+            <img src="Sunshine.jpg" alt="Jung Hoseok">
+            <img src="Mochi.jpg" alt="Park Jimin">
+            <img src="Baby taetae.jpg" alt="Kim Taehyung">
+            <img src="Kookie.jpg" alt="Jeon Jungkook">
+        </div>
+    </div>
+</body>
+</html>
